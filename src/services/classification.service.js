@@ -1,7 +1,11 @@
 const classificationDB = []
 
+var id = 1
+
 const createClassification = classification => {
+    classification.id = id
     classificationDB.push(classification)
+    id = id + 1
 }
 
 const getAllClassifications = () => classificationDB
@@ -11,7 +15,8 @@ const updateClassification = (id, classification) => {
         classification => classification.id == id
     )
 
-    if (classificationId > -1) {
+    if (classificationId != -1) {
+        classification.id = id
         classificationDB[classificationId] = classification
     }
 }

@@ -1,7 +1,11 @@
 const teamDB = []
 
+var id = 1
+
 const createTeam = team => {
+    team.id = id
     teamDB.push(team)
+    id = id + 1
 }
 
 const getAllTeams = () => teamDB
@@ -11,7 +15,8 @@ const updateTeam = (id, team) => {
         team => team.id == id
     )
 
-    if (teamId > -1) {
+    if (teamId != -1) {
+        team.id = id
         teamDB[teamId] = team
     }
 }
