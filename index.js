@@ -1,10 +1,10 @@
 const express = require('express')
 const swaggerUi = require('swagger-ui-express')
-const swaggerDoc = require('../swagger.json')
+const swaggerDoc = require('./swagger.json')
 
-const teamRouter = require('./routes/teams.routes')
-const matchesRouter = require('./routes/matches.routes')
-const classificationRoutes = require('./routes/classifications.routes')
+const teamRouter = require('./src/routes/teams.routes')
+const matchesRouter = require('./src/routes/matches.routes')
+const classificationRoutes = require('./src/routes/classifications.routes')
 
 const app = express()
 app.use(express.json())
