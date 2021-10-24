@@ -17,8 +17,8 @@ app.use('/teams', teamRouter)
 app.use('/matches', matchesRouter)
 app.use('/classification', classificationRoutes)
 
-const port = 1011
+const PORT = process.env.PORT || 1011
 
 app.listen(port, () => {
-    console.log(`Server started on port ${port}`)
+    console.log(`Server started on port ${PORT}`)
 })
