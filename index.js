@@ -19,6 +19,6 @@ app.use('/classification', classificationRoutes)
 
 const PORT = process.env.PORT || 1011
 
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`)
 })
