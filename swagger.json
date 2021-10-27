@@ -219,7 +219,7 @@
                 "tags": [
                     "matches"
                 ],
-                "summary": "Delete specific team by id",
+                "summary": "Delete specific matche by id",
                 "produces": [
                     "application/json"
                 ],
