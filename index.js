@@ -11,7 +11,7 @@ app.use(express.json())
 
 app.use("/api-doc", swaggerUi.serve, swaggerUi.setup(swaggerDoc))
 
-app.get('/', (req, res) => res.send('Hello'))
+app.get('/', (req, res) => res.send('Welcome to the World Cup API!!!'))
 
 app.use('/teams', teamRouter)
 app.use('/matches', matchesRouter)
