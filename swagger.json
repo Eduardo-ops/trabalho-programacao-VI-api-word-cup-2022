@@ -98,7 +98,7 @@
                         "description": "Successful operation"
                     },
                     "404": {
-                        "description": "Invalid customer id"
+                        "description": "Invalid team id"
                     }
                 }
             },
@@ -124,7 +124,7 @@
                         "description": "successful operation"
                     },
                     "404": {
-                        "description": "Invalid customer id"
+                        "description": "Invalid team id"
                     }
                 }
             }
@@ -211,7 +211,7 @@
                         "description": "Successful operation"
                     },
                     "404": {
-                        "description": "Invalid customer id"
+                        "description": "Invalid matche id"
                     }
                 }
             },
@@ -237,7 +237,7 @@
                         "description": "successful operation"
                     },
                     "404": {
-                        "description": "Invalid customer id"
+                        "description": "Invalid matche id"
                     }
                 }
             }
@@ -324,7 +324,7 @@
                         "description": "Successful operation"
                     },
                     "404": {
-                        "description": "Invalid customer id"
+                        "description": "Invalid classification id"
                     }
                 }
             },
@@ -350,7 +350,7 @@
                         "description": "successful operation"
                     },
                     "404": {
-                        "description": "Invalid customer id"
+                        "description": "Invalid classification id"
                     }
                 }
             }
@@ -379,13 +379,13 @@
                     "type": "integer",
                     "format": "int64"
                 },
-                "Round": {
+                "round": {
                     "type": "string"
                 },
-                "Teams": {
+                "teams": {
                     "type": "string"
                 },
-                "Scoreboard": {
+                "scoreboard": {
                     "type": "string"
                 }
             }
@@ -397,10 +397,10 @@
                     "type": "integer",
                     "format": "int64"
                 },
-                "Classification": {
+                "classification": {
                     "type": "string"
                 },
-                "Team": {
+                "team": {
                     "type": "string"
                 }
             }
